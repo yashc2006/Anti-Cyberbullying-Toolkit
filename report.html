@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Report Incident - Anti-Cyberbullying Toolkit</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="light-mode">
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-shield-alt"></i>
+            <span>Anti-Cyberbullying Toolkit</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="report.html" class="active">Report</a>
+            <a href="quiz.html">Quiz</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="resources.html">Resources</a>
+        </div>
+        <button id="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>Report an Incident</h1>
+            <p>Your voice matters • Take action • Stay safe</p>
+        </section>
+
+        <section id="report" class="section">
+            <div class="report-info">
+                <h2>How to Report</h2>
+                <p>If you've experienced or witnessed cyberbullying, please fill out the form below. Your report will be handled confidentially and appropriate action will be taken.</p>
+                <div class="report-tips">
+                    <h3>Tips for Reporting:</h3>
+                    <ul>
+                        <li>Be specific about what happened</li>
+                        <li>Include dates and times if possible</li>
+                        <li>Save screenshots or evidence</li>
+                        <li>Report to relevant platforms</li>
+                        <li>Inform trusted adults</li>
+                    </ul>
+                </div>
+            </div>
+
+            <form id="report-form" class="report-form">
+                <div class="form-group">
+                    <label for="incident-type">Type of Incident</label>
+                    <select id="incident-type" required>
+                        <option value="">Select incident type</option>
+                        <option value="harassment">Online Harassment</option>
+                        <option value="threats">Threats</option>
+                        <option value="impersonation">Impersonation</option>
+                        <option value="hate-speech">Hate Speech</option>
+                        <option value="stalking">Cyberstalking</option>
+                        <option value="other">Other</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="platform">Platform Where Incident Occurred</label>
+                    <input type="text" id="platform" placeholder="e.g., Instagram, WhatsApp, etc." required>
+                </div>
+                <div class="form-group">
+                    <label for="description">Description of Incident</label>
+                    <textarea id="description" rows="5" placeholder="Please provide details about what happened..." required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="date">Date of Incident</label>
+                    <input type="date" id="date">
+                </div>
+                <div class="form-group">
+                    <label for="evidence">Upload Screenshot (Optional)</label>
+                    <input type="file" id="evidence" accept="image/*">
+                    <small>Accepted formats: PNG, JPG, JPEG (Max size: 5MB)</small>
+                </div>
+                <div class="form-group">
+                    <label>
+                        <input type="checkbox" required>
+                        I understand that this report will be handled confidentially
+                    </label>
+                </div>
+                <button type="submit" class="btn">Submit Report</button>
+            </form>
+        </section>
+
+        <section class="section emergency-resources">
+            <h2>Emergency Resources</h2>
+            <div class="emergency-grid">
+                <div class="emergency-card">
+                    <i class="fas fa-phone"></i>
+                    <h3>24/7 Helpline</h3>
+                    <p>Call 1-800-XXX-XXXX for immediate support</p>
+                </div>
+                <div class="emergency-card">
+                    <i class="fas fa-comments"></i>
+                    <h3>Online Chat Support</h3>
+                    <p>Chat with trained counselors</p>
+                </div>
+                <div class="emergency-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Support Groups</h3>
+                    <p>Connect with others who understand</p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Anti-Cyberbullying Toolkit. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

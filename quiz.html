@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz - Anti-Cyberbullying Toolkit</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body class="light-mode">
+    <nav class="navbar">
+        <div class="logo">
+            <i class="fas fa-shield-alt"></i>
+            <span>Anti-Cyberbullying Toolkit</span>
+        </div>
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="report.html">Report</a>
+            <a href="quiz.html" class="active">Quiz</a>
+            <a href="testimonials.html">Testimonials</a>
+            <a href="resources.html">Resources</a>
+        </div>
+        <button id="theme-toggle" aria-label="Toggle dark mode">
+            <i class="fas fa-moon"></i>
+        </button>
+    </nav>
+
+    <main>
+        <section class="hero">
+            <h1>Test Your Knowledge</h1>
+            <p>Learn • Understand • Prevent</p>
+        </section>
+
+        <section id="quiz" class="section">
+            <div class="quiz-intro">
+                <h2>Cyberbullying Awareness Quiz</h2>
+                <p>Take this quiz to test your understanding of cyberbullying, its impact, and prevention strategies. Each question will help you learn more about staying safe online.</p>
+                <div class="quiz-instructions">
+                    <h3>Instructions:</h3>
+                    <ul>
+                        <li>Read each question carefully</li>
+                        <li>Select the best answer from the options provided</li>
+                        <li>Get instant feedback on your answers</li>
+                        <li>See your final score at the end</li>
+                        <li>Retake the quiz as many times as you want</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="quiz-container">
+                <div id="quiz-progress" class="progress-bar"></div>
+                <div id="quiz-content"></div>
+                <button id="quiz-next" class="btn">Start Quiz</button>
+            </div>
+
+            <div class="quiz-resources">
+                <h3>Additional Resources</h3>
+                <p>Want to learn more? Check out our educational materials in the Resources section after completing the quiz.</p>
+                <a href="resources.html" class="btn secondary-btn">View Resources</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Anti-Cyberbullying Toolkit. All rights reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
